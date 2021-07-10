@@ -1,6 +1,8 @@
 package org.managely.ManagelyCore;
 
 
+import org.bukkit.command.Command;
+import org.bukkit.command.CommandSender;
 import org.bukkit.plugin.java.JavaPlugin;
 import org.managely.ManagelyCore.command.CommandManage;
 import org.managely.ManagelyCore.modules.ManagelyModule;
@@ -17,12 +19,14 @@ public class ManagelyCore extends JavaPlugin {
 
     }
 
-    public boolean registerModule(String name, ManagelyModule m){
+    public static boolean registerModule(String name, ManagelyModule m){
         if(moduleList.containsKey(name)) return false;
+        System.out.println("yoyoyoyo");
 
         moduleList.put(name, m);
 
         return true;
     }
+
 }
 

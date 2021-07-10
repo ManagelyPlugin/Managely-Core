@@ -1,2 +1,4 @@
+org\managely\ManagelyCore\command\CommandManage.class
 org\managely\ManagelyCore\events\custom\ManagelyContrabandItemPickupEvent.class
-org\managely\ManagelyCore\Main.class
+org\managely\ManagelyCore\ManagelyCore.class
+org\managely\ManagelyCore\modules\ManagelyModule.class

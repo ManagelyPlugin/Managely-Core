@@ -11,9 +11,12 @@ import java.util.Locale;
 public class CommandManage implements CommandExecutor {
     @Override
     public boolean onCommand(CommandSender commandSender, Command command, String s, String[] strings) {
+        if(strings[0] == null) return false;
         for(String n : ManagelyCore.moduleList.keySet()){
-            if(strings[0].toLowerCase(Locale.ROOT) == n.toLowerCase(Locale.ROOT)){
+
+            if(strings[0].equals(n)){
                 String[] args = Arrays.copyOfRange(strings, 1, strings.length);
+                System.out.println("yoyo");
                 ManagelyCore.moduleList.get(n).manageCommandCalled(commandSender, command, s, args);
             }
         }

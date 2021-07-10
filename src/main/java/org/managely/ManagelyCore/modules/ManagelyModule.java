@@ -4,9 +4,7 @@ import org.bukkit.command.Command;
 import org.bukkit.command.CommandSender;
 import org.bukkit.plugin.java.JavaPlugin;
 
-public class ManagelyModule extends JavaPlugin {
+public abstract class ManagelyModule extends JavaPlugin {
 
-    public void manageCommandCalled(CommandSender commandSender, Command command, String s, String[] strings){
-
-    }
+    public abstract void manageCommandCalled(CommandSender commandSender, Command command, String s, String[] strings);
 }
