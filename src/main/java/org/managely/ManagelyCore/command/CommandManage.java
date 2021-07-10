@@ -20,7 +20,6 @@ public class CommandManage implements CommandExecutor {
 
             if(strings[0].equalsIgnoreCase(n)){
                 String[] args = Arrays.copyOfRange(strings, 1, strings.length);
-                System.out.println("yoyo");
                 Class<? extends Plugin> c = Objects.requireNonNull(Bukkit.getPluginManager().getPlugin("Managely-" + n)).getClass();
                 Class[] cArg = new Class[]{CommandSender.class, Command.class, String.class, String[].class};
                 try {
