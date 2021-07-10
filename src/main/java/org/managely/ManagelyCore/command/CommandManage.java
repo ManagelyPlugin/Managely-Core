@@ -33,6 +33,7 @@ public class CommandManage implements CommandExecutor {
 
             }
         }
-        return false;
+        commandSender.sendMessage("Invalid module name!");
+        return true;
     }
 }
