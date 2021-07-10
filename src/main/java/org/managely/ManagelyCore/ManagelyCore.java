@@ -17,7 +17,7 @@ public class ManagelyCore extends JavaPlugin {
 
     }
 
-    public boolean registerModule(String name, ManagelyModule m){
+    public static boolean registerModule(String name, ManagelyModule m){
         if(moduleList.containsKey(name)) return false;
 
         moduleList.put(name, m);
